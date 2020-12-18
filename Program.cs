@@ -12,7 +12,7 @@ namespace openlab_11._00
             Book Pauls = new Book(150, "Pauls book", "Paul", "Sci-fi", 2021);      
             List<string> students = new List<string>() { "John","Paul" };
             List<Book> books = new List<Book>(){ Johns, Pauls };
-            Library schoolLibrary = new Library();
+            Library schoolLibrary = new Library(books.Count,students.Count, students, books);
             schoolLibrary.Listing();
 
 
